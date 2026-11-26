@@ -1,5 +1,22 @@
 # electron-publish
 
+## 27.0.0-alpha.16
+### Patch Changes
+
+
+<details><summary>Updated 2 dependencies</summary>
+
+<small>
+
+[`d0d4046`](https://github.com/electron-userland/electron-builder/commit/d0d4046bd2a30f57150ecfa2ef615315dcb96619) [`100cf40`](https://github.com/electron-userland/electron-builder/commit/100cf40d45310bff0fc6bf1d52be8136093eb22c)
+
+</small>
+
+- `builder-util-runtime@10.0.0-alpha.15`
+- `builder-util@27.0.0-alpha.16`
+
+</details>
+
 ## 27.0.0-alpha.15
 ### Patch Changes
 

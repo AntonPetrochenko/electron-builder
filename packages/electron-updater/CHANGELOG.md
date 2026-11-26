@@ -1,5 +1,25 @@
 ## 7.0.0-alpha.13
 
+## 7.0.0-alpha.15
+### Minor Changes
+
+- Feat: reject block maps that cannot be planned on. An update of unknown, zero or invalid size is downloaded in full without fetching any block map. A block map (v2 or v3, separate or embedded) that is empty, describes a 0-byte file, does not end at the update's size or plans no data is rejected with one log line (`ERR_UPDATER_INVALID_BLOCKMAP`) and the update is downloaded in full. When the update manifest has a `blockMapSha512` for a file, the new block map (downloaded whole, or assembled from Range requests) is checked against it before it is used or cached; `blockMapSha512` is base64 only _[`#10496`](https://github.com/electron-userland/electron-builder/pull/10496) [`d0d4046`](https://github.com/electron-userland/electron-builder/commit/d0d4046bd2a30f57150ecfa2ef615315dcb96619)_
+
+### Patch Changes
+
+
+<details><summary>Updated 1 dependency</summary>
+
+<small>
+
+[`d0d4046`](https://github.com/electron-userland/electron-builder/commit/d0d4046bd2a30f57150ecfa2ef615315dcb96619)
+
+</small>
+
+- `builder-util-runtime@10.0.0-alpha.15`
+
+</details>
+
 ## 7.0.0-alpha.14
 ### Major Changes
 
